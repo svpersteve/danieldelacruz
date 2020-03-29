@@ -1,0 +1,31 @@
+.navbar {
+  background-color: #0041FF;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  height: 40px;
+  width: 106px;
+  margin: auto 15px;
+}
+
+.navbar__items {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-basis: 50%;
+
+  a, a:visited {
+    color: #fff;
+    margin-right: 1em;
+  }
+}
+
+.navbar__current {
+  border-bottom: solid 1px #fff;
+}
