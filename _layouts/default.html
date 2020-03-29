@@ -5,6 +5,11 @@
   <meta charset="utf-8">
   <title>{{ page.title }} | Daniel de la Cruz, fitness trainer</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
+  {% seo %}
+  {% if jekyll.environment == "production" %}
+    {% include analytics.html %}
+  {% endif %}
+
 </head>
 
 <body>
