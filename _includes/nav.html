@@ -1,0 +1,10 @@
+<nav class="navbar">
+  <a href="/" class="navbar__logo">
+    <img src="{{site.baseurl}}/assets/images/logo.png" />
+  </a>
+  <div class="navbar__items">
+    {% for item in site.data.nav %}
+     <a href="{{ item.link }}" {% if page.url == item.link %}class="navbar__current" {% endif %}>{{ item.name }}</a>
+    {% endfor %}
+  </div>
+</nav>
