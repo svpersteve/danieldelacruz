@@ -1,15 +1,25 @@
 .navbar {
   background-color: #0041FF;
-  height: 80px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
+  height: 60px;
+  width: 100%;
+
+  @media #{$from-medium} {
+    height: 80px;
+    width: 100%;
+  }
 }
 
 .navbar__logo {
-  height: 40px;
-  width: 106px;
   margin: auto 15px;
+  height: 20px;
+  width: 53px;
+
+  @media #{$from-medium} {
+    height: 40px;
+    width: 106px;
+  }
 }
 
 .navbar__items {
@@ -23,12 +33,21 @@
   a, a:visited {
     color: #fff;
     margin-right: 1em;
-    font-size: 1.5em;
-    font-family: "FSJoeyHeavy", sans-serif;
+    font-size: .8em;
+    font-family: "Baloo", sans-serif;
     border-bottom: solid 3px transparent;
+    opacity: .9;
+
+    @media #{$from-medium} {
+      font-size: 1.2em;
+    }
   }
 }
 
 .navbar__current {
-  border-bottom: solid 3px #fff !important;
+  border-bottom: solid 2px #fff !important;
+
+  @media #{$from-medium} {
+    border-bottom: solid 2px #fff !important;
+  }
 }
